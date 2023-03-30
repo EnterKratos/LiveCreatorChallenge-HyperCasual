@@ -98,3 +98,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ee147a616b21344fbc9a8ac7f2b9887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverEvent: {fileID: 11400000, guid: da8900e2809819c4895394d0dbaf3ca1, type: 2}
