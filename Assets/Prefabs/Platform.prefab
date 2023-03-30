@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: {x: 0, y: 8, z: 0}
   debounceTime: 0.5
+  bounced: {fileID: 11400000, guid: e7b0250bae390fc4eaeafbfea4019f05, type: 2}

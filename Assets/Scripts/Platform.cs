@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using EnterKratos.ScriptableObjects;
 using UnityEngine;
 
 public class Platform : MonoBehaviour
@@ -8,6 +9,9 @@ public class Platform : MonoBehaviour
 
     [SerializeField]
     private float debounceTime;
+
+    [SerializeField]
+    private GameEvent bounced;
 
     private IEnumerator _bounceCoroutine;
 
@@ -19,6 +23,7 @@ public class Platform : MonoBehaviour
         }
 
         rb.AddForce(force, ForceMode.VelocityChange);
+        bounced.Raise();
         _bounceCoroutine = Bounce();
         StartCoroutine(_bounceCoroutine);
     }
